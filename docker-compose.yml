@@ -1,0 +1,39 @@
+version: '3.5'
+
+services:
+  
+  nginx:
+
+    image: nginx:1.19.0-alpine
+
+    volumes:
+      - ./static:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+    ports:
+      - 80:80
+
+    depends_on: 
+      - fastapi
+
+  postgres:
+
+    image: postgres:12.3-alpine
+
+    env_file:
+      - postgres.env
+
+    volumes:
+      - postgres-data:/var/lib/postgresql/data/
+
+  fastapi:
+
+    image: fastapi-app
+
+    depends_on: 
+      - postgres
+      
+
+volumes:
+  postgres-data:
+
