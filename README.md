@@ -1,8 +1,8 @@
 # Final deployment docker-compose with nginx configuration
 
 You can find source code for Frontend and Backend parts here:
-    - [https://github.com/ToTHXaT/Practice-blog-frontend](frontend)
-    - [https://github.com/ToTHXaT/Practice-blog-backend](backend).
+    - [https://github.com/ToTHXaT/Practice-blog-frontend.git](frontend)
+    - [https://github.com/ToTHXaT/Practice-blog-backend.git](backend).
 
 ## Misc
 
