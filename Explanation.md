@@ -130,6 +130,7 @@ As we can see ufw is installed and enabled for us.
     .....
 ```
 
+
 #### Server
 
 8. Moving into docker-compose file directory and starting all containers
@@ -140,7 +141,8 @@ As we can see ufw is installed and enabled for us.
     sudo docker-compose up
 ```
 
+Docker will pull all containers and will start working.
 
-Server is up and running now
+**Server is up and running now !**
 
 Visit it [here](http://45.11.26.143/)
